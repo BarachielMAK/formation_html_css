@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body nav {
+background:black;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 50px;
+}
+nav ul {
+display: flex;
+}
+nav ul li {
+list-style: none;
+padding: 0 10px;
+}
+nav ul li a {
+text-decoration: none;
+color: white;
+}
+.active a {
+color: #1bac91;
+text-decoration-line: underline;
+}
+.theme-active a:hover {
+color: #1bac91;
+text-decoration-line: underline;
+}
+.presentation .theme-active button:hover {
+background-color: #1bac91;
+
+}
+/* presentation debut */
+.presentation {
+width: 100%;
+height: 600px;
+background-image: url(img/about.jpg),linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+background-position: center;
+background-size: cover;      
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+.presentation div {
+text-align: center;
+margin: 0;
+}
+.presentation div p {
+margin: 10px 0;
+}
+.presentation div button {
+padding: 5px 20px;
+background: none;
+border-radius: 5px;
+color: white;
+border: 2px solid white;
+}
+/* description */
+.description {
+width: 100%;
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+}
+.description img {
+width: 400px;
+height: 400px;
+margin: 2rem;
+}
+.description .description-text p {
+font-size: 10px;
+padding-bottom: 10px;
+}
+/* card-container */
+.card-container {
+width: calc(100% - 10%);
+padding: 5% 5%;
+background-color: #F8F9FA;
+}
+.card-container .line, .card-container .none-line {
+display: flex;
+justify-content: space-between;
+}
+.line .number, .none-line .number{
+font-weight: normal;
+color: #1bac91;
+margin-bottom: 20px;
+}
+.line .card-desc {
+border-bottom: 1px solid #AAAAAA;
+padding: 35px;
+}
+.line .title {
+font-size: 25px;
+font-weight: normal;
+margin-bottom: 20px;
+}
+.none-line .card-desc {
+padding: 35px; 
+}
+.none-line .title {
+font-size: 25px;
+font-weight: normal;
+margin-bottom: 20px;
+}
+.line .card-desc-line, .none-line .card-desc-line {
+border-left: 1px solid #AAAAAA;
+border-right: 1px solid #AAAAAA;
+padding: 35px;
+}
+.line .desc {
+font-size: 15px;
+font-weight: normal;
+color: #AAAAAA;
+}
+.none-line .desc {
+font-size: 15px;
+font-weight: normal;
+color: #AAAAAA;
+}
+/* service */
+.service {
+display: flex;
+align-items: center;
+padding: 5%;
+}
+.service .service-text {
+ padding: 45px;
+}
+.service .service-text .service-card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.service .service-text .service-card h1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #FF6600;
+}
+.service .service-text .service-card p {
+    color: #4e4d4d;
+}
+.service .service-text .service-card p:hover {
+    color: #FF6600;
+}
+ .card-active,.service .service-text .service-card:hover {
+    background: #e9f2f9;
+    box-shadow: 3px 3px 3px 3px #e9f2f9;
+    border-radius: 8px;
+}
+.service .service-img img {
+    width: 600px;
+    height: auto;
+}
+.article {
+width: calc(100% -10%);
+padding: 5%;
+background-color:#F3F9F9;
+}
+.article .article-title {
+padding:45px 58px;
+}
+.article .article-title h2 {
+align-items: center;
+justify-content: center;
+display: flex;
+margin-bottom: 15px;
+}
+.article .article-text {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 45px;
+}
+.article-text-box {
+margin: 0 15px;
+padding: 50px;
+border-radius: 8px;
+background-color: #FFFFFF
+}
+.article .article-text div h4 {
+margin-bottom: 15px;
+}
+/* formulaire debut */
+.form-group {
+    background-color: #F8F9FA;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 3%;
+}
+.form-group form {
+    width: 60%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(226, 224, 224, 0.3);
+}
+.form-group .input-line {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0;
+}
+.form-group .input-line div {
+    width: 48%;
+}
+.form-group .input-line input, .form-group .input-line textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    outline: none;
+}
+.form-group .input-line input:focus, .form-group .input-line textarea:focus {
+    border: 2px solid #FF6600;
+}
+.boutton {
+    display: flex;
+    justify-content: center;
+}
+.boutton button {
+    padding: 15px 30px;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    background: #FF6600;
+    color: #fff;
+    border-radius: 6px;
+}
+ .form-group .input-line textarea {
+    min-height: 100px;
+}
+
+
+
+
+/* ...........................  Media query ............................. */
+
+
+@media (max-width: 1100px) {
+    .article .article-text {
+        display: block; 
+    }
+    .article .article-text .article-text-box {
+        margin-bottom: 10px;
+    }
+    .description {
+        display: block;     
+    }
+    .description .description-text {
+        padding: 1rem;
+        margin-bottom: 5%;
+    }    
+   
+}
+
+@media (max-width: 600px) {
+    .service {
+        display: block;
+    }
+    .service-img {
+        width: 300px;
+    }
+    .card-container .line {
+        display: block;
+    }
+    .card-container .none-line {
+        display: block;
+    }
+    .line .card-desc-line, .none-line .card-desc-line {
+        border-left: 0px;
+        border-right: 0px;
+        padding: 35px;
+    }
+    .line .card-desc {
+        border-bottom: 0px;
+        margin-bottom: 10px;
+    }
+      
+}
+
+@media (max-width: 300px) {
+    .service-img {
+        width: 150px;
+    }
+}
+
